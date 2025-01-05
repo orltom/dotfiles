@@ -1,0 +1,7 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.minimap.showMarkSectionHeaders": false,
+    "editor.minimap.showRegionSectionHeaders": false,
+    "workbench.tree.indent": 16,
+    "window.menuBarVisibility": "toggle",
+}

@@ -1,0 +1,35 @@
+align=left
+separator=true
+color=#f8f8f2
+separator_block_width=15
+markup=pango
+
+[layout]
+command=setxkbmap -print | awk -F"+" '/xkb_symbols/ {print toupper($2)}'
+label=<span color="#FFFFFF">  </span>
+interval=5
+
+[battery]
+command=upower -i $(upower -e | grep BAT) | grep --color=never -E "percentage" | awk '{print $2}'
+label=<span color="#FFFFFF">  </span>
+interval=20
+
+[vpn]
+command=if [ $(pstree -tspc | grep openvpn | wc -l) -ge 1 ]; then echo ""; fi
+label=<span color="#FFFFFF">VPN </span>
+interval=20
+
+[wifi]
+command=iw dev wlan0 link | grep -i SSID | awk '{print $2}'
+label=<span color="#FFFFFF">  </span>
+interval=20
+
+[ethernet]
+command=if [ $(ip a s $(lshw -class network -short 2> /dev/null | grep -i ethernet | head -n1 | awk '{print $2}') | grep inet | wc -l) -ge 1 ]; then echo ""; fi
+label=<span color="#FFFFFF">eth</span>
+interval=20
+
+[date]
+command=date '+%a, %d %b %H:%M'
+label=<span color="#FFFFFF">  </span>
+interval=60
