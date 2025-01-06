@@ -1,3 +1,4 @@
-
+xrandr
 setxbmap de
+xrdb -merge ~/.Xresources
 exec i3
