@@ -1,0 +1,29 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono;
+  font-size: 13px;
+}
+
+window#waybar {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#workspaces button {
+  padding: 0 8px;
+  color: #888;
+}
+
+#workspaces button.active {
+  color: #a6e3a1;
+  font-weight: bold;
+}
+
+#clock {
+  padding: 0 10px;
+}
+
+#pulseaudio, #network, #battery, #tray {
+  padding: 0 10px;
+}

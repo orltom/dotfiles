@@ -1,0 +1,7 @@
+show=drun
+width=512
+height=260
+prompt=
+no_actions=true
+allow_images=false
+gtk_dark=true

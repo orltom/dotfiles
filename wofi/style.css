@@ -1,0 +1,61 @@
+* {
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+}
+
+/* Hauptfenster */
+window {
+  background-color: #282C33;
+  border: 1px solid #2e343f;
+  padding: 0;
+}
+
+/* Äußere Container */
+#outer-box {
+  padding: 0;
+  margin: 0;
+}
+
+#inner-box {
+  padding: 0;
+  margin: 0;
+}
+
+/* Eingabezeile */
+#input {
+  background-color: #282C33;
+  color: #2AA198;
+  border-bottom: 1px solid #2e343f;
+  padding: 6px;
+}
+
+/* Text im Input */
+#input > #text {
+  color: #2AA198;
+}
+
+/* Liste */
+#scroll {
+  padding: 0;
+  margin: 0;
+}
+
+/* Einträge */
+#entry {
+  padding: 8px;
+  border-bottom: 1px solid #2e343f;
+}
+
+/* Text der Einträge */
+#entry > #text {
+  color: #2AA198;
+}
+
+/* Selektierter Eintrag */
+#entry:selected {
+  background-color: #2AA198;
+}
+
+#entry:selected > #text {
+  color: #282C33;
+}
