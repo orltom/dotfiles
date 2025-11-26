@@ -1,7 +1,72 @@
 {
+    "workbench.statusBar.visible": true,
+    "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.tree.indent": 16,
     "editor.minimap.showMarkSectionHeaders": false,
     "editor.minimap.showRegionSectionHeaders": false,
-    "workbench.tree.indent": 16,
-    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'JetBrains Mono', monospace",
+    "editor.fontLigatures": true,
+    "window.zoomLevel": 0,
+    // Breadcrumbs & Tabs
+    "breadcrumbs.enabled": true,
+    "workbench.editor.showTabs": "multiple",
+    // Explorer
+    "explorer.compactFolders": false,
+    // General Clean Look
+    "telemetry.telemetryLevel": "off",
+    "workbench.tips.enabled": false,
+    "editor.hover.enabled": "on",
+    "editor.smoothScrolling": true,
+    // Language
+    "go.useLanguageServer": true,
+    "go.formatTool": "gofmt",
+    "go.lintTool": "golangci-lint",
+    "go.testFlags": [
+        "-v"
+    ],
+    "yaml.schemas": {
+        "https://json.schemastore.org/kubernetes.json": "/*.k8s.yaml",
+        "https://json.schemastore.org/chart.json": "Chart.yaml"
+    },
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.tpl": "helm"
+    },
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Monokai",
+    "explorer.confirmDragAndDrop": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.fontFamily": "'JetBrains Mono','Symbols Nerd Font Mono'",
+    "terminal.integrated.fontSize": 13,
+    "claudeCode.preferredLocation": "panel",
+    "git.openRepositoryInParentFolders": "always",
+    "editor.largeFileOptimizations": false,
+    "explorer.confirmDelete": false,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "go.toolsManagement.autoUpdate": true,
+    "editor.fontSize": 18,
 }

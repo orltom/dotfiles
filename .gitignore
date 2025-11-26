@@ -1,1 +1,8 @@
 .vim/pack
+hypr/monitors.conf
+hypr/monitors.lua
+hypr/workspaces.conf
+clipse/tmp_files
+clipse/clipboard_history.json
+clipse/clipse.log
+waybar/menu/vpn.sh
