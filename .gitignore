@@ -2,6 +2,7 @@
 hypr/monitors.conf
 hypr/monitors.lua
 hypr/workspaces.conf
+hypr/workspaces.lua
 clipse/tmp_files
 clipse/clipboard_history.json
 clipse/clipse.log

@@ -23,12 +23,24 @@
     "editor.hover.enabled": "on",
     "editor.smoothScrolling": true,
     // Language
+    "gopls": {
+        "ui.semanticTokens": true,
+        "ui.diagnostic.staticcheck": true,
+        "analyses": {
+            "fillstruct": true
+        }
+    },
     "go.useLanguageServer": true,
     "go.formatTool": "gofmt",
     "go.lintTool": "golangci-lint",
+    "go.lintOnSave": "package",
     "go.testFlags": [
-        "-v"
+        "-v",
+        "-count=1"
     ],
+    "go.inlayHints.parameterNames": true,
+    "go.inlayHints.assignVariableTypes": false,
+    "go.inlayHints.compositeLiteralFields": true,
     "yaml.schemas": {
         "https://json.schemastore.org/kubernetes.json": "/*.k8s.yaml",
         "https://json.schemastore.org/chart.json": "Chart.yaml"
@@ -36,7 +48,10 @@
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "[go]": {
-        "editor.defaultFormatter": "golang.go"
+        "editor.defaultFormatter": "golang.go",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
     },
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -45,10 +60,10 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "files.associations": {
-        "*.tpl": "helm"
+        "*.tpl": "helm",
+        "*.toml": "ini"
     },
     "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Monokai",
     "explorer.confirmDragAndDrop": false,
     "[dockercompose]": {
         "editor.insertSpaces": true,
@@ -68,5 +83,10 @@
     "explorer.confirmDelete": false,
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "go.toolsManagement.autoUpdate": true,
-    "editor.fontSize": 18,
+    "intellij.region": "europe",
+    "intellij.dataSharing": "none",
+    "editor.fontSize": 15,
+    "editor.mouseWheelZoom": true,
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.colorTheme": "Monokai",
 }
