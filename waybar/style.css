@@ -46,8 +46,21 @@ window#waybar.hidden {
   background-color: #cdd6f4;
 }
 
+@keyframes workspace-urgent-blink {
+  to {
+    background-color: #2c3036;
+    color: #d8adb9;
+  }
+}
+
 #workspaces button.urgent {
   background-color: #d8adb9;
+  color: #1e1e2e;
+  animation-name: workspace-urgent-blink;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #memory,
