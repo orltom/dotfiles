@@ -1,0 +1,37 @@
+window {
+    background-color: rgba(20, 20, 26, 0.9);
+    border-radius: 12px;
+    padding: 8px;
+    font-family: JetBrainsMono Nerd Font;
+}
+
+#input {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(137, 180, 250, 0.2);
+    color: #cdd6f4;
+    background-image: none;
+    -gtk-icon-source: none;
+    -gtk-secondary-caret-color: transparent;
+}
+
+#input image {
+    opacity: 0;
+}
+
+#input:first-child {
+    -gtk-icon-source: none;
+}
+
+entry {
+    background-image: none;
+    -gtk-icon-source: none;
+}
+
+entry image {
+    -gtk-icon-size: 0;
+    min-width: 0;
+    min-height: 0;
+    opacity: 0;
+}

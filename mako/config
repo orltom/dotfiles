@@ -1,0 +1,41 @@
+# GLOBAL
+background-color=#2f343f
+text-color=#d8dee8
+border-color=#2f343f
+border-size=2
+border-radius=12
+padding=10
+width=500
+height=120
+default-timeout=5000
+anchor=top-right
+font=JetBrainsMono Nerd Font 11
+icons=1
+
+# Max number of stacked notifications
+max-visible=5
+
+# Enable markup
+markup=1
+
+icon-path=/usr/share/icons/Papirus-Dark/16x16/apps:/usr/share/icons/Papirus-Dark/24x24/apps
+max-icon-size=24
+
+# ===========================
+# Urgency overrides
+# ===========================
+
+[urgency=low]
+background-color=#2f343f
+text-color=#d8dee8
+border-color=#2f343f
+
+[urgency=normal]
+background-color=#2f343f
+text-color=#d8dee8
+border-color=#2f343f
+
+[urgency=critical]
+background-color=#f2cdcd
+text-color=#181825
+border-color=#bf616a

@@ -1,5 +1,0 @@
-configuration {
-	modi: "run";
-}
-
-@theme "slate"

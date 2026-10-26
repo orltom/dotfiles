@@ -1,16 +1,15 @@
 * {
-  font-family: "Fira Code", monospace;
-  font-size: 15px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 18px;
 }
 
-/* Hauptfenster */
 window {
-  background-color: #282C33;
-  border: 1px solid #2e343f;
+  background-color: rgba(40, 44, 51, 1);  /* <-- key: alpha < 1 */
+  border: 1px solid #343449;
   padding: 0;
+  border-radius: 9px;
 }
 
-/* Äußere Container */
 #outer-box {
   padding: 0;
   margin: 0;
@@ -21,39 +20,40 @@ window {
   margin: 0;
 }
 
-/* Eingabezeile */
 #input {
-  background-color: #282C33;
-  color: #2AA198;
-  border-bottom: 1px solid #2e343f;
+  background-color: #1e1e2e;
+  border: 1px solid #3c3c53;
   padding: 6px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+
 }
 
-/* Text im Input */
+#entry, #input {
+    background: transparent;
+}
+
 #input > #text {
-  color: #2AA198;
+  color: #ffffff;
 }
 
-/* Liste */
 #scroll {
   padding: 0;
   margin: 0;
 }
 
-/* Einträge */
 #entry {
   padding: 8px;
   border-bottom: 1px solid #2e343f;
 }
 
-/* Text der Einträge */
 #entry > #text {
-  color: #2AA198;
+  color: #3c3c53;
 }
 
-/* Selektierter Eintrag */
 #entry:selected {
-  background-color: #2AA198;
+  color: #343449;
+  background-color: #3c3c53;
 }
 
 #entry:selected > #text {
